@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'mvn clean -f backend'
                 echo 'downloading GitHub project...'
-                git branch: 'main', credentialsId: 'Lukhasz', url: 'https://github.com/lukhasz/ProjectAssignment2-Personal.git'
+                git branch: 'main', credentialsId: 'dcf05bfd-e0bb-4627-b951-7eb1e10948ea', url: 'https://github.com/lukhasz/ProjectAssignment2-Personal.git'
             }
         }
 
