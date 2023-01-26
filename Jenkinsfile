@@ -45,14 +45,5 @@ pipeline {
                 echo 'war file moved!'
             }
         }
-
-    }
-
-    post {
-        always {
-            echo 'generating test report...'
-            junit 'target/*reports/**/*.xml'
-            ehco 'test report generated'
-        }
     }
 }
