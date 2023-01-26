@@ -1,0 +1,7 @@
+Spring:
+  datasource:
+    name: database
+    platform: postgres
+    url: jdbc:postgresql://database:5432/database
+    username: jensenyh
+    password: password
