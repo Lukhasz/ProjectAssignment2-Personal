@@ -1,7 +1,17 @@
-Spring:
+server:
+  port: 8099
+
+spring:
   datasource:
-    name: database
-    platform: postgres
-    url: jdbc:postgresql://database:5432/database
+    url: jdbc:postgresql://database:5432/saltmerch
     username: jensenyh
     password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+jenkins:
+  url: http://jenkins:8050/
+  username: Lukhasz
+  password: L0lukokasos!
