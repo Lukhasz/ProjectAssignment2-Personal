@@ -10,8 +10,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-
-jenkins:
-  url: http://jenkins:8050/
-  username: Lukhasz
-  password: L0lukokasos!
