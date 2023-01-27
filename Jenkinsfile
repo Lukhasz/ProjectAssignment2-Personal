@@ -46,4 +46,12 @@ pipeline {
             }
         }
     }
+	
+	post {
+		always {
+			echo 'generating test report...'
+			junit 'target/*reports/**/*.xml'
+			echo 'test reports generated!'
+		}
+	}
 }
