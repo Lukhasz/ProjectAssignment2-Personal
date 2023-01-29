@@ -50,7 +50,7 @@ pipeline {
 	post {
 		always {
 			echo 'generating test report...'
-			junit 'build/*reports/**/*.xml'
+			junit '**/target/*reports/**/*.xml'
 			echo 'test reports generated!'
 		}
 	}
