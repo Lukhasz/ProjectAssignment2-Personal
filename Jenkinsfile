@@ -22,7 +22,7 @@ pipeline {
             }
         }
 
-        stage ('test') {
+        stage('test') {
             steps {
                 echo 'starting test...'
                 sh 'mvn surefire:test -f backend'
@@ -30,7 +30,7 @@ pipeline {
             }
         }
         
-        stage ('package') {
+        stage('package') {
             steps {
                 echo 'packaging...'
                 sh 'mvn war:war -f backend'
@@ -38,7 +38,7 @@ pipeline {
             }
         }
         
-        stage ('move war-file') {
+        stage('move war-file') {
             steps {
                 echo 'moving war file...'
                 sh 'cp backend/target/ROOT.war /artifacts'
